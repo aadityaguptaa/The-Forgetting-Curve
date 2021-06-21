@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".home.HomeFragment">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/menuFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_parent_right"
+            android:layout_marginBottom="@dimen/margin_parent_bottom"
+            android:clickable="true"
+            app:tint="?attr/colorOnPrimary"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="?attr/colorSecondary"
+            app:elevation="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/floating_action" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/floating_action"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:visibility="invisible"
+            app:backgroundTint="?attr/colorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/menuFloatingActionButton"
+            app:layout_constraintEnd_toEndOf="@+id/menuFloatingActionButton"
+            app:tint="?attr/colorOnPrimary" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/updateFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/floating_action"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_update_24"
+            android:visibility="invisible"
+            app:backgroundTint="?attr/colorSecondary"
+            app:layout_constraintBottom_toTopOf="@+id/addFloatingActionButton"
+            app:layout_constraintEnd_toEndOf="@+id/addFloatingActionButton"
+            app:tint="?attr/colorOnPrimary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
