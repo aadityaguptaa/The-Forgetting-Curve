@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
     private val fromBottom: Animation by lazy { AnimationUtils.loadAnimation(context, R.anim.from_bottom_anim)}
     private val toBottom: Animation by lazy { AnimationUtils.loadAnimation(context, R.anim.to_bottom_anim)}
     
-    private var clicked = false
+    private var clicked: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +31,7 @@ class HomeFragment : Fragment() {
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_home, container, false
         )
+        clicked = false
 
         binding.menuFloatingActionButton.setOnClickListener{ onMenuButtonClicked() }
         binding.addFloatingActionButton.setOnClickListener {
@@ -72,7 +73,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setClickable(clicked: Boolean){
-        if(!clicked){
+        if(clicked){
             binding.updateFloatingActionButton.isClickable = false
             binding.addFloatingActionButton.isClickable = false
         }else{

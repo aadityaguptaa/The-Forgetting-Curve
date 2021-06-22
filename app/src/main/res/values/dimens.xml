@@ -2,4 +2,7 @@
 <resources>
     <dimen name="margin_parent_right">24dp</dimen>
     <dimen name="margin_parent_bottom">24dp</dimen>
+    <dimen name="margin_parent_top">24dp</dimen>
+    <dimen name="margin_parent_left">24dp</dimen>
+
 </resources>
