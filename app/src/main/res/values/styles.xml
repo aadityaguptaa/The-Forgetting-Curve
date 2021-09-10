@@ -27,8 +27,10 @@
 
 
 
-
-
+    <style name="sw" parent="">
+        <item name="colorOnSurface">#FF6200EE</item>
+        <item name="colorSecondary">#FF6200EE</item>
+    </style>
 
     //text styles
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">

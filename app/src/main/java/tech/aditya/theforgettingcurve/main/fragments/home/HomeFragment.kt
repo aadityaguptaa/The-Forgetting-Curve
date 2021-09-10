@@ -1,4 +1,4 @@
-package tech.aditya.theforgettingcurve.home
+package tech.aditya.theforgettingcurve.main.fragments.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

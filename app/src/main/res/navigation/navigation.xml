@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="tech.aditya.theforgettingcurve.home.HomeFragment"
+        android:name="tech.aditya.theforgettingcurve.main.fragments.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,11 +16,12 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="tech.aditya.theforgettingcurve.add.AddFragment"
+        android:name="tech.aditya.theforgettingcurve.main.fragments.add.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+
 </navigation>

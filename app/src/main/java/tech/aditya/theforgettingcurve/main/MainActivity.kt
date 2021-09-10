@@ -1,7 +1,8 @@
-package tech.aditya.theforgettingcurve
+package tech.aditya.theforgettingcurve.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import tech.aditya.theforgettingcurve.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
